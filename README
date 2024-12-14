@@ -1,0 +1,31 @@
+Instructions for Running the Team Mineru Word Tracker Program
+ 
+Follow these steps to run the Word Tracker program:
+1. Extract the zipped folder to a destination of your choice.
+2. Open the folder named cprg304assignment3.
+3. Right-click inside the folder and select "Open in Terminal" (or open a terminal manually and navigate to the folder path).
+4. Use the following command in the terminal to execute the program:
+ 
+	java -jar WordTracker.jar <input.txt> -pf/-pl/-po [-f <output.txt>]
+ 
+Explanation of the Parameters
+ 
+input.txt: The path to the input text file that the program will analyze and track words from.
+ 
+Options for Result Display: Choose one of the following flags to specify how the results should be displayed:
+-pf: prints in alphabetic order all words, along with the corresponding list of files in which the words occur.
+-pl: prints in alphabetic order all words, along with the corresponding list of files and line numbers in which the word occur.
+-po: prints in alphabetic order all words, along with the corresponding list of files, line numbers in which the word occur and the frequency of occurrence of the words.
+ 
+f <output.txt>: The path to the file where the results will be saved.
+ 
+This parameter is optional. If omitted, the results will be displayed in the console. The output file will be automatically created if it does not already exist.
+ 
+Example Command:
+ 
+java -jar WordTracker.jar res/simpleTest.txt -pl -f output.txt
+ 
+This command will:
+•	Analyze the file located at res/simpleTest.txt
+•	prints in alphabetic order all words, along with the corresponding list of files and line numbers in which the word occur. (pl)
+•	Save the results to output.txt.
